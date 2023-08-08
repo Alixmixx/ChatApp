@@ -3,7 +3,9 @@ import { ConfigModule } from '@nestjs/config';
 import { ChannelModule } from './chat/channel.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), ChannelModule],
+  imports: [ConfigModule.forRoot({
+    envFilePath: '../.env'
+  }), ChannelModule],
   controllers: [],
   providers: [],
 })
