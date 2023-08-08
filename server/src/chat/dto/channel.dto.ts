@@ -13,7 +13,7 @@ export class CreateChannelDto {
 export class JoinChannelDto {
 	@IsString()
 	@Length(6, 6)
-	channelId: string;
+	channelID: string;
 
 	@IsString()
 	@Length(1, 25)

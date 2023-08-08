@@ -5,12 +5,25 @@ export type CreateChannelFields = {
 };
 
 export type JoinChannelFields = {
-  channelId: string;
+  channelID: string;
   name: string;
 };
 
 export type RejoinChannelFields = {
-  channelId: string;
-  userId: string;
+  channelID: string;
+  userID: string;
+  name: string;
+};
+
+// Repository types
+export type CreateChannelData = {
+  channelID: string;
+  topic: string;
+  userID: string;
+};
+
+export type AddUserChannelData = {
+  channelID: string;
+  userID: string;
   name: string;
 };
